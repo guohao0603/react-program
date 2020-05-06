@@ -46,17 +46,13 @@ react-manage        # 项目根目录
 ### 项目截图
 ![](https://user-images.githubusercontent.com/36063573/81181634-5254f580-8fdf-11ea-9331-414d4a2e0b43.png)
 
+![home](https://user-images.githubusercontent.com/36063573/81182289-2ede7a80-8fe0-11ea-937c-ce3054dcecce.png)
 
-<img src="./static/home.png" alt="" width=800>
+![category](https://user-images.githubusercontent.com/36063573/81182333-3b62d300-8fe0-11ea-8751-bfd602bfcde3.png)
 
+![user](https://user-images.githubusercontent.com/36063573/81182365-43bb0e00-8fe0-11ea-9aa6-8dec757b3f66.png)
 
-<img src="./static/category.png" alt="" width=800>
+![role](https://user-images.githubusercontent.com/36063573/81182374-487fc200-8fe0-11ea-84ce-e61f5d7a8193.png)
 
+![chart](https://user-images.githubusercontent.com/36063573/81182399-503f6680-8fe0-11ea-8037-1faa7c3651ac.png)
 
-<img src="./static/user.png" alt="" width=800>
-
-
-<img src="./static/role.png" alt="" width=800>
-
-
-<img src="./static/chart.png" alt="" width=800>
