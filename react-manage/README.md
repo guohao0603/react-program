@@ -44,7 +44,7 @@ react-manage        # 项目根目录
 
 
 ### 项目截图
-<img src="./static/login.png" alt="" width=800>
+![](https://user-images.githubusercontent.com/36063573/81181634-5254f580-8fdf-11ea-9331-414d4a2e0b43.png)
 
 
 <img src="./static/home.png" alt="" width=800>
