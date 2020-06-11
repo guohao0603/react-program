@@ -50,6 +50,8 @@ react-manage        # 项目根目录
 
 ![category](https://user-images.githubusercontent.com/36063573/81182333-3b62d300-8fe0-11ea-8751-bfd602bfcde3.png)
 
+![product](https://user-images.githubusercontent.com/36063573/84365045-7c638e00-ac03-11ea-889e-ae67fcaa11f1.png)
+
 ![user](https://user-images.githubusercontent.com/36063573/81182365-43bb0e00-8fe0-11ea-9aa6-8dec757b3f66.png)
 
 ![role](https://user-images.githubusercontent.com/36063573/81182374-487fc200-8fe0-11ea-84ce-e61f5d7a8193.png)
