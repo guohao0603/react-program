@@ -2,7 +2,7 @@
     登录的路由组件
 */
 import React, {Component} from 'react';
-import {Redirect} from 'react-router-dom'
+import {Redirect} from 'react-router-dom';
 import './login.less';
 import logo from '../../assets/images/w.jpg';
 import { Form, Icon, Input, Button,message} from 'antd';
@@ -93,7 +93,7 @@ class Login extends Component {
                                         placeholder="密码"
                                     />
                                 )
-                            }
+                        }
                         </Item>
                         <Item>
                             <Button type="primary" htmlType="submit" className="login-form-button">

@@ -13,6 +13,10 @@
 
  const BASE = ipConfig.apiHost; // 根据环境切换不同的ip
 
+ // 上传图片接口
+ export const reqUplodImg = BASE + '/manage/img/upload'
+ // 删除图片接口
+ export const reqDeleteImg = (name) => request(BASE + '/manage/img/delete',{name},'POST')
  // 写箭头函数的原因是 不用加 {} 并且 return
  export const reqLogin = (username,password) => request(BASE + '/login',{username,password},'POST')
 // json请求的接口请求函数
@@ -38,6 +42,9 @@ export const reqWeather = (city) => {
 // 获取一级/二级分类的列表
 export const reqCategorys = (parentId) => request(BASE + '/manage/category/list', {parentId})
 
+// 获取特定的分类
+export const reqCategory = (categoryId) => request(BASE + '/manage/category/info',{categoryId})
+
 // 添加分类
 export const reqAddCategory = (categoryName, parentId) => request(BASE + '/manage/category/add', {categoryName, parentId}, 'POST')
 
@@ -56,8 +63,26 @@ export const reqUpdateRole = (role) => request(BASE + '/manage/role/update', rol
 // 获取所有用户的列表
 export const reqUsers = () => request(BASE + '/manage/user/list')
 
+// 获取商品数据
+export const reqProduts = (pageNum,pageSize) => request(BASE + '/manage/product/list',{pageNum,pageSize})
+
 // 删除指定用户
 export const reqDeleteUser = (userId) => request(BASE + '/manage/user/delete', {userId}, 'POST')
 
 // 添加/更新用户
 export const reqAddOrUpdateUser = (user) => request(BASE + '/manage/user/'+(user._id ? 'update' : 'add'), user, 'POST')
+
+// 添加/更新商品
+export const reqAddOrUpdateProduct = (product) => request(BASE + '/manage/product/' +( product._id ? 'update': 'add'), product, 'POST')
+
+// 搜索分页列表(根据商品名称/商品描述)
+// searchType: 搜索的类型 是两个的某一个，productName/productDesc
+export const reqSearchProducts = ({pageNum,pageSize,searchName,searchType}) => request(BASE + '/manage/product/search',{
+  pageNum,
+  pageSize,
+  [searchType]: searchName
+})
+
+// 更新商品的状态(上架/下架)
+export const reqProductStatus = (productId,status) => request(BASE + '/manage/product/updateStatus',{productId,status},'POST')
+

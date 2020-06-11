@@ -3,15 +3,16 @@ import { withRouter, Switch, Redirect,Route} from 'react-router-dom';
 import LoadableComponent from '../../utils/LoadableComponent';
 
 //参数一定要是函数，否则不会懒加载，只会代码拆分
-const Home = LoadableComponent(()=>import('../../pages/home/home'))  
-const Category = LoadableComponent(()=>import('../../pages/category/category'))  
-const Product = LoadableComponent(()=>import('../../pages/product/product'))  
-const Role = LoadableComponent(()=>import('../../pages/role/role'))  
-const User = LoadableComponent(()=>import('../../pages/user/user'))  
-const Bar = LoadableComponent(()=>import('../../pages/charts/bar'))  
-const Line = LoadableComponent(()=>import('../../pages/charts/line'))  
-const Pie = LoadableComponent(()=>import('../../pages/charts/pie'))  
-const NotFound = LoadableComponent(()=>import('../../pages/notFound/notFound'))
+const Home = LoadableComponent(()=>import('$views/home/home'))  
+// import Home from 'views/home/home'
+const Category = LoadableComponent(()=>import('$views/category/category'))  
+const Product = LoadableComponent(()=>import('$views/product/product'))  
+const Role = LoadableComponent(()=>import('$views/role/role'))  
+const User = LoadableComponent(()=>import('$views/user/user'))  
+const Bar = LoadableComponent(()=>import('$views/charts/bar'))  
+const Line = LoadableComponent(()=>import('$views/charts/line'))  
+const Pie = LoadableComponent(()=>import('$views/charts/pie'))  
+const NotFound = LoadableComponent(()=>import('$views/notFound/notFound'))
 
 class ContentMenu extends Component {
     render () {

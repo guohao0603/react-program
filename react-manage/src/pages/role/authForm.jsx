@@ -43,7 +43,7 @@ export default class AuthForm extends Component {
     // 为父组件提交获取最新menus数据的方法
   getMenus = () => this.state.checkedKeys
   
-  componentWillMount () {
+  UNSAFE_componentWillMount () {
     this.treeNodes = this.getTreeNodes(menuList)
   }
    // 根据新传入的role来更新checkedKeys状态

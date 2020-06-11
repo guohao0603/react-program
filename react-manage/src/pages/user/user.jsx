@@ -120,12 +120,12 @@ export default class User extends Component{
         // 保存
         this.roleNames = roleNames
     }
-    componentWillMount () {
-    this.initColumns()
+    UNSAFE_componentWillMount () {
+      this.initColumns()
     }
     
     componentDidMount () {
-    this.getUsers()
+      this.getUsers()
     }
     
     render () {
